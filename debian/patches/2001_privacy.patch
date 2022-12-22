@@ -1,0 +1,23 @@
+Description: Avoid privacy breach in documentation
+Forwarded: no
+Author: Jonas Smedegaard <dr@jones.dk>
+Last-Update: 2020-11-30
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/README.md
++++ b/README.md
+@@ -2,7 +2,6 @@
+   -- This file is auto-generated from README_js.md. Changes should be made there.
+   -->
+ 
+-# uuid [![CI](https://github.com/uuidjs/uuid/workflows/CI/badge.svg)](https://github.com/uuidjs/uuid/actions?query=workflow%3ACI) [![Browser](https://github.com/uuidjs/uuid/workflows/Browser/badge.svg)](https://github.com/uuidjs/uuid/actions?query=workflow%3ABrowser)
+ 
+ For the creation of [RFC4122](http://www.ietf.org/rfc/rfc4122.txt) UUIDs
+ 
+@@ -502,4 +501,4 @@
+ This usage pattern was already discouraged in `uuid@3.x` and has been removed in `uuid@7.x`.
+ 
+ ----
+-Markdown generated from [README_js.md](README_js.md) by [![RunMD Logo](http://i.imgur.com/h0FVyzU.png)](https://github.com/broofa/runmd)
+\ No newline at end of file
++Markdown generated from [README_js.md](README_js.md) by [![RunMD Logo](http://i.imgur.com/h0FVyzU.png)](https://github.com/broofa/runmd)

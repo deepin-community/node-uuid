@@ -1,0 +1,6 @@
+# License is in License-Reference field (see bug#786450)
+missing-license-paragraph-in-dep5-copyright gpl-3\+ *
+missing-license-text-in-dep5-copyright GPL-3\+ *
+
+# False positive, just unusually long code lines in source
+node-uuid source: source-is-missing test/unit/v35.test.js line length is 671 characters (>512)

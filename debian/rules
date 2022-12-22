@@ -1,0 +1,46 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+# generate documentation unless nodoc requested
+ifeq (,$(filter nodoc,$(DEB_BUILD_OPTIONS)))
+DOCS = README.html README.txt
+CHANGELOGS = CHANGELOG.html CHANGELOG.txt
+endif
+
+# normalize output with TAP where possible unless terse requested
+ESLINT = eslint
+ifeq (,$(filter terse,$(DEB_BUILD_OPTIONS)))
+ESLINT += --format tap
+else
+ESLINT += --format unix
+endif
+
+%:
+	dh $@
+
+%.html: %.md
+	pandoc --from gfm-raw_html --to html --standalone --output $@ $<
+
+%.txt: %.md
+	pandoc --from gfm-raw_html --to plain --output $@ $<
+
+override_dh_clean:
+	dh_clean -- $(DOCS) $(CHANGELOGS)
+
+override_dh_auto_build: $(DOCS) $(CHANGELOGS)
+	./scripts/build.sh
+
+override_dh_install:
+	dh_install
+	# If someone needs to use this, we probably need a uuid binary package
+	rm -rf debian/node-uuid/usr/share/nodejs/uuid/dist/bin
+
+override_dh_installdocs:
+	dh_installdocs --all -- $(DOCS)
+
+override_dh_installchangelogs:
+	dh_installchangelogs -- $(CHANGELOGS)
+
+override_dh_gencontrol:
+	dh_gencontrol -- -V"types:Version=$(shell jq --raw-output .version < Xtypes/package.json)~$(DEB_VERSION)"

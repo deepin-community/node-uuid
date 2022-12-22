@@ -1,0 +1,12 @@
+We will use babeljs and rollup from system
+
+--- a/scripts/build.sh
++++ b/scripts/build.sh
+@@ -4,7 +4,6 @@
+ ROOT="$(pwd)/$(dirname "$0")/.."
+ cd "$ROOT" || exit 1
+ 
+-PATH="$(npm bin):$PATH"
+ DIR="$ROOT/dist"
+ 
+ # Clean up output dir
