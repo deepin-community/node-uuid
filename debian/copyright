@@ -22,22 +22,22 @@ Files:
 Copyright:
   1999-2009, Paul Johnston
   2011, Sebastian Tschan
+License: Expat
 License-Grant:
  Licensed under the MIT license:
  <https://opensource.org/licenses/MIT>
-License: Expat
 
 Files:
  debian/*
 Copyright:
   2011-2013,2018,2020, Jonas Smedegaard <dr@jones.dk>
+License: GPL-3+
 License-Grant:
  This program is free software;
  you can redistribute it and/or modify it
  under the terms of the GNU General Public License
  as published by the Free Software Foundation;
  either version 3, or (at your option) any later version.
-License: GPL-3+
 
 Files: debian/tests/test_modules/random-seed/*
 Copyright: 2013 skratchdot
@@ -73,7 +73,6 @@ License: Expat
  THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 License: GPL-3+
-License-Reference: /usr/share/common-licenses/GPL-3
 
 License: public-domain
  LICENSE AND COPYRIGHT:  THIS CODE IS HEREBY RELEASED INTO THE PUBLIC DOMAIN

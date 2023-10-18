@@ -3,4 +3,6 @@ missing-license-paragraph-in-dep5-copyright gpl-3\+ *
 missing-license-text-in-dep5-copyright GPL-3\+ *
 
 # False positive, just unusually long code lines in source
-node-uuid source: source-is-missing test/unit/v35.test.js line length is 671 characters (>512)
+source-is-missing test/unit/v35.test.js
+source-contains-prebuilt-javascript-object test/unit/v35.test.js
+very-long-line-length-in-source-file test/unit/v35.test.js line 20 is 679 characters long (>512)

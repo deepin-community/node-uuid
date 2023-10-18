@@ -1,5 +1,5 @@
-We will use babeljs and rollup from system
-
+Description: Skip npm command
+ We will use babeljs and rollup from system
 --- a/scripts/build.sh
 +++ b/scripts/build.sh
 @@ -4,7 +4,6 @@
