@@ -1,15 +1,13 @@
 Source: node-uuid
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
 Section: javascript
 Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
-Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
-Uploaders: Pirate Praveen <praveen@debian.org>
 Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
- , eslint <!nocheck>
  , jest <!nocheck>
  , jq
- , node-babel-eslint <!nocheck>
  , node-babel7
  , node-json-stringify-safe <!nocheck>
  , node-rollup-plugin-node-resolve (>= 9~)
@@ -17,22 +15,20 @@ Build-Depends: debhelper-compat (= 13)
  , pandoc <!nodoc>
  , rollup
  , uglifyjs
-Standards-Version: 4.5.1
-Rules-Requires-Root: no
-Homepage: https://github.com/uuidjs/uuid
-Vcs-Git: https://salsa.debian.org/js-team/node-uuid.git
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-uuid
+Vcs-Git: https://salsa.debian.org/js-team/node-uuid.git
+Homepage: https://github.com/uuidjs/uuid
+Rules-Requires-Root: no
 
 Package: node-uuid
 Architecture: all
 Depends: ${misc:Depends}
-Provides: node-types-uuid (= ${types:Version})
-Replaces: node-node-uuid (<< 3.3.2-1~)
 Breaks: node-copy-webpack-plugin (<< 5.1.2+~cs9.0.2-4~)
  , node-node-rest-client (<< 2.5.0-5~)
- , node-node-uuid (<< 3.3.2-1~)
  , node-request (<< 2.88.1-5~)
  , yarnpkg (<< 1.22.4-5~)
+Provides: node-types-uuid (= ${types:Version})
 Description: simple and fast RFC4122 UUID generation - Node.js module
  uuid provides simple, fast generation of RFC4122 UUIDs.
  .

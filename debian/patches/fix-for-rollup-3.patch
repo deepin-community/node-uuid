@@ -1,0 +1,25 @@
+Description: fix for rollup 3
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1022656
+Forwarded: not-needed
+Last-Update: 2022-10-26
+
+--- a/rollup.config.js
++++ b/rollup.config.js
+@@ -1,5 +1,5 @@
+-import nodeResolve from '@rollup/plugin-node-resolve';
+-import { terser } from 'rollup-plugin-terser';
++const nodeResolve = require('@rollup/plugin-node-resolve').nodeResolve;
++const { terser } = require('rollup-plugin-terser');
+ 
+ function chunk(input, name) {
+   return {
+@@ -14,7 +14,7 @@
+   };
+ }
+ 
+-export default [
++module.exports = [
+   chunk('index', 'uuid'),
+   chunk('v1', 'uuidv1'),
+   chunk('v3', 'uuidv3'),

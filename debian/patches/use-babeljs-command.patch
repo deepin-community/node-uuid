@@ -1,5 +1,5 @@
-babel command in debian is babeljs
-
+Description: Use babeljs command
+ babel command in debian is babeljs
 --- a/scripts/build.sh
 +++ b/scripts/build.sh
 @@ -11,13 +11,13 @@

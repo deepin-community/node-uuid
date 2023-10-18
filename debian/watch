@@ -10,6 +10,7 @@ https://github.com/uuidjs/uuid/tags \
 
 # NPM registry needed for node types (avoid if at all possible!)
 opts=\
+ctype=nodejs,\
 component=Xtypes,\
 searchmode=plain,\
 pgpmode=none,\

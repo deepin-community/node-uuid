@@ -1,3 +1,4 @@
 2001_privacy.patch
 skip-npm-command.patch
 use-babeljs-command.patch
+fix-for-rollup-3.patch

@@ -1,3 +1,35 @@
+node-uuid (8.3.2+~8.3.3-4) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.2
+  * Fix clean (Closes: #1045277)
+
+ -- Yadd <yadd@debian.org>  Mon, 14 Aug 2023 08:33:27 +0400
+
+node-uuid (8.3.2+~8.3.3-3) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.1, no changes needed.
+  * Add fix for rollup 3 (Closes: #1022656)
+
+ -- Yadd <yadd@debian.org>  Thu, 27 Oct 2022 14:38:59 +0200
+
+node-uuid (8.3.2+~8.3.3-2) unstable; urgency=medium
+
+  * Team upload
+  * Drop useless test dependency to node-babel-eslint
+
+ -- Yadd <yadd@debian.org>  Wed, 16 Mar 2022 15:55:35 +0100
+
+node-uuid (8.3.2+~8.3.3-1) unstable; urgency=medium
+
+  * Team upload
+  * Add ctype=nodejs to component(s)
+  * Update standards version to 4.6.0, no changes needed.
+  * New upstream version 8.3.2+~8.3.3
+
+ -- Yadd <yadd@debian.org>  Sun, 21 Nov 2021 18:12:01 +0100
+
 node-uuid (8.3.2+~8.3.0-4) unstable; urgency=medium
 
   * Team upload
